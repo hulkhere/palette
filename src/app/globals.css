@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@font-face {
+  font-family: "Awesome Italic";
+  src: url("./fonts/awesome-italic.ttf");
+}
+
+.awesome-italic {
+  font-family: "Awesome Italic";
+}
+
+@font-face {
+  font-family: "Awesome";
+  src: url("./fonts/awesome.ttf");
+}
+
+.awesome {
+  font-family: "Awesome";
+}
+
+@font-face {
+  font-family: "Font One";
+  src: url("./fonts/font-one.ttf");
+}
+
+.font-one {
+  font-family: "Font One";
+}
+
+@font-face {
+  font-family: "Font Two";
+  src: url("./fonts/font-two.ttf");
+}
+
+.font-two {
+  font-family: "Font Two";
+}
